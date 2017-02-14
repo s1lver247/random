@@ -34,19 +34,23 @@ function createThirdScene() {
 // This function is called whenever you press the "Go!" button.
 function createRandomScene() {
     // Generate a random number between 0 and 1, and store it in a variable.
-
+    var number = Math.random()
+    if(number < 0.5) {
+      makeImage("http://www.atglenvet.com/wp-content/uploads/2014/08/Cat-Sitting-2.png", 0, 0, 205, 205, 1)
+    }else{
+      makeCircle(100, 50, 25, "yellow", 1)
     // If the number is less than 0.33, call the function to create your first scene.
-
+}
 
     // Else, if the number is less than 0.67, call the function to create your second scene.
-
+}
 
 
     // Else, call the function to create your third scene.
 
 
 
-}
+
 
 
 
